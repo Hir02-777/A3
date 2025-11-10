@@ -14,9 +14,8 @@ namespace TestProjectFile
 
         TEST_METHOD(Player1Wins)
         {
-            Assert::IsTrue(strcmp("Player2", determine_winner("Rock", "Scissors")) == 0);
+            Assert::AreEqual("Player1", determine_winner("Rock", "Scissors"));
         }
-
 
         TEST_METHOD(Player2Wins)
         {
